@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CONTAINER */
+.main_container {
+    width: 93%;
+}
+
+/* BALANCE CONTAINER */
+.balance_container {
+    background-color: hsl(10, 79%, 65%);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.balance_content > h3 {
+    font-weight: 400;
+}
+
+.balance_content > h2 {
+    font-weight: 700;
+}
+
+/* THE CHART */
+.chart_container {
+    background-color: hsl(33, 100%, 98%);
+    color: hsl(25, 47%, 15%);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.chart_container > h3 {
+    font-weight: 700;
+}
+
+.chart {
+    height: 260px; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 20px;
+}
+
+.bar {
+    flex: 1;
+    background-color: hsl(10, 79%, 65%); 
+    text-align: center;
+    border-radius: 3px;
+}
+
+.labels {
+    border-bottom: 2px solid hsl(27, 66%, 92%);
+}
+
+.labels > span {
+    color: hsl(28, 10%, 53%);
+    font-size: 0.8rem;
+    margin-top: -10px;
+    margin-right: 27px;
+}
+
+.chart_col {
+    background-color: hsl(10, 79%, 65%);
+    height: 100px;
+    width: 45px;
+    border-radius: 5px;
+}  
+
+/* LAST INFORMATIONS */
+.this_month > h6 {
+    color: hsl(28, 10%, 53%);
+}
+
+.this_month > h1 {
+    font-weight: 700;
+}
+
+.last_month > span {
+    font-weight: 700;
+}
+
+.last_month > p {
+    color: hsl(28, 10%, 53%);
+}
+
+/* FOOTER */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
