@@ -98,6 +98,15 @@ body {
     border-radius: 5px;
 }  
 
+.popup {
+    display: none;
+    position: absolute;
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 
 /* ------------- LAST INFORMATIONS ------------- */
 .this_month > h6 {
