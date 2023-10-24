@@ -7,8 +7,7 @@ const chartLabels = document.querySelectorAll('.labels span')
 fetch("../data.json")
     .then(response => response.json())
     .then(data => {
-        console.log(data)
-
+        // inserting the amount values above the chart bars, from the JSON file
         chartBars.forEach((bar, index) => {
             bar.addEventListener('mouseover', () => {
                 showPopup(bar, data[index].amount);
@@ -19,6 +18,7 @@ fetch("../data.json")
             })
         });
 
+        // inserting the week days as labels, also from the JSON file
         chartLabels.forEach((label, index) => {
             const day = data[index].day
             label.textContent = day
@@ -28,7 +28,7 @@ fetch("../data.json")
         console.error("Couldn't reload the JSON file: ", error)
     });
 
-// "hover" function
+// function to show the amount popup
 function showPopup(e, amount) {
     const popup = document.getElementById('popup');
     const barraRect = e.getBoundingClientRect();
@@ -39,6 +39,7 @@ function showPopup(e, amount) {
     popup.textContent = `$${amount}`;
 }
 
+// function to hide the amount popup
 function hidePopup() {
     const popup = document.getElementById('popup');
     popup.style.display = 'none';
