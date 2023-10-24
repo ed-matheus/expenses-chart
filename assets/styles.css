@@ -15,12 +15,12 @@ body {
     align-items: center;
 }
 
-/* MAIN CONTAINER */
+/* ------------- MAIN CONTAINER ------------- */
 .main_container {
     width: 93%;
 }
 
-/* BALANCE CONTAINER */
+/* ------------- BALANCE CONTAINER ------------- */
 .balance_container {
     background-color: hsl(10, 79%, 65%);
     color: white;
@@ -37,7 +37,8 @@ body {
     font-weight: 700;
 }
 
-/* THE CHART */
+
+/* ------------- THE CHART ------------- */
 .chart_container {
     background-color: hsl(33, 100%, 98%);
     color: hsl(25, 47%, 15%);
@@ -64,6 +65,21 @@ body {
     border-radius: 3px;
 }
 
+.topBar {
+    flex: 1;
+    background-color: hsl(186, 34%, 60%); 
+    text-align: center;
+    border-radius: 3px;
+}
+
+.topBar:hover {
+    background-color: rgba(118, 181, 188, 0.6); 
+}
+
+.bar:hover {
+    background-color: rgba(236, 119, 95, 0.6); 
+}
+
 .labels {
     border-bottom: 2px solid hsl(27, 66%, 92%);
 }
@@ -82,7 +98,8 @@ body {
     border-radius: 5px;
 }  
 
-/* LAST INFORMATIONS */
+
+/* ------------- LAST INFORMATIONS ------------- */
 .this_month > h6 {
     color: hsl(28, 10%, 53%);
 }
@@ -99,7 +116,7 @@ body {
     color: hsl(28, 10%, 53%);
 }
 
-/* FOOTER */
+/* ------------- FOOTER ------------- */
 .attribution { 
     font-size: 11px; text-align: center; 
 }
